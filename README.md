@@ -1,5 +1,4 @@
-# py-todo
-
+# todo-py
 This is a simple command-line to-do list application written in Python. The application allows the user to add tasks, remove tasks by index, mark tasks as done, and quit the application. The tasks are stored in a plain text file in the user's home directory.
 
 ## Requirements

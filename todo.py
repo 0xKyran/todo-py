@@ -1,6 +1,7 @@
 import sys
 import termios
 import tty
+import os
 
 # This function reads a single character of input from the user without waiting for a newline
 def getch():
