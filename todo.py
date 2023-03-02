@@ -21,7 +21,7 @@ def getch():
 
 def main():
     # Set the filename for the to-do list
-    todo_file = "todo.txt"
+    todo_file = os.path.join(os.path.expanduser("~"), "Documents", "todo.txt")
     # Initialize the list of tasks to an empty list
     tasks = []
     try:
