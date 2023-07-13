@@ -4,11 +4,11 @@ A simple CLI to manage your tasks in any git repository.
 
 ## Table of Contents
 
-    [Installation](#installation)
-    [Building](#building)
-    [Usage](#usage)
-    [Contributing](#contributing)
-    [License](#license)
+- [Installation](#installation)
+- [Building](#building)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
