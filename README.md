@@ -1,20 +1,63 @@
-# todo-py
-This is a simple command-line to-do list application written in Python. The application allows the user to add tasks, remove tasks by index, mark tasks as done, and quit the application. The tasks are stored in a plain text file in the user's home directory.
+# TODO List CLI
 
-## Requirements
+A simple CLI to manage your tasks in any git repository.
 
-This application requires Python 3.x to be installed on the user's system. There are no other dependencies.
+## Table of Contents
 
-## Usage
+    [Installation](#installation)
+    [Building](#building)
+    [Usage](#usage)
+    [Contributing](#contributing)
+    [License](#license)
 
-To use the application, simply run the `main()` function in the `todo.py` script. The application will display a menu with options to add tasks, remove tasks, and quit. To select an option, press the corresponding letter (a, r or q).
+## Installation
 
-When adding a task, simply type the task and press Enter. The task will be added to the list.
+The TODO List CLI requires Python 3.6+ to run. Install the necessary dependencies and the application using the following commands:
 
-When removing a task, enter the index of the task to remove and press Enter. The task at that index will be removed from the list.
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/0xKyran/todo-py.git
+```
 
-The task list will be displayed after each update, and the application will continue to run until the user selects the "q" option.
+copy the `todo` file to your `/bin` directory:
+```bash
+sudo cp ./todo-py/bin/todo /bin
+```
 
-## License
+Or run todo.py directly:
+```bash
+python3 ./todo-py/src/todo.py
+```
 
-This application is released under the MIT License. See the LICENSE file for more information.
+## building
+
+To build the application, run the following command:
+
+```bash
+pyinstaller --onefile .//todo.py
+```
+
+## usage
+
+This CLI can be used to manage tasks in any git repository. It stores the tasks in a file named TODO in the root of the repository.
+
+To run the CLI, navigate to your git repository and execute the command:
+
+```bash
+todo
+```
+
+The following options are available:
+
+- `a`: Add a new task.
+- `r`: Remove an existing task.
+- `d`: Mark a task as done.
+- `q`: Quit the application.
+
+## contributing
+
+The project is opensource but not open for contributions. If you have any suggestions, please open an issue.
+
+## license
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
